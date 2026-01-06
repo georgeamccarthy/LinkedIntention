@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIntention",
+  "description": "Hides the LinkedIn home feed behind a ‘Show Feed’ button so you choose when to scroll.",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/", "https://www.linkedin.com/feed/"],
+      "js": ["src/content.js"],
+      "css": ["src/content.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
