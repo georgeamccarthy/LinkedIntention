@@ -4,6 +4,10 @@ A minimal Chrome extension that requires a button press to show the LinkedIn hom
 
 One-shotted with OpenAI Codex.
 
+## Screenshot
+
+![LinkedIntention screenshot](screenshot.png)
+
 ## Install (developer mode)
 
 1. Open Chrome and go to `chrome://extensions`
@@ -19,4 +23,3 @@ One-shotted with OpenAI Codex.
 ## Notes
 
 - LinkedIn is a dynamic SPA; if they change DOM structure/classes, the selector may need updates in `src/content.js`.
-
