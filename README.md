@@ -1,6 +1,6 @@
 # LinkedIntention
 
-A minimal Chrome extension that requires a button press to show the LinkedIn home feed.
+A minimal [Chrome extension](https://chromewebstore.google.com/detail/linkedintention/clpocmehodfobdogjhpaienfadmkgklm) that requires a button press to show the LinkedIn home feed.
 
 One-shotted with OpenAI Codex.
 
