@@ -2,6 +2,7 @@
     "manifest_version": 3,
     "name": "LinkedIntention | Block/Hide the LinkedIn Feed",
     "description": "Hides the LinkedIn home feed behind a ‘Show Feed’ button so you choose when to scroll.",
+    "short_name": "LinkedIntention",
     "version": "1.0.1",
     "content_scripts": [
         {
