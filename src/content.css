@@ -49,6 +49,8 @@
 
 html.li-intention-pending main .scaffold-finite-scroll,
 html.li-intention-pending main .scaffold-finite-scroll__content,
-html.li-intention-pending main [data-finite-scroll-hotkey-item] {
+html.li-intention-pending main [data-finite-scroll-hotkey-item],
+html.li-intention-pending main [data-testid="mainFeed"],
+html.li-intention-pending main [data-test-id="main-feed"] {
   display: none !important;
 }

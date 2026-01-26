@@ -18,10 +18,11 @@
     if (!main) return null;
 
     return (
+      main.querySelector('[data-testid="mainFeed"]') ||
+      main.querySelector('[data-test-id="main-feed"]') ||
       main.querySelector(".scaffold-finite-scroll") ||
       main.querySelector(".scaffold-finite-scroll__content") ||
-      main.querySelector('[data-finite-scroll-hotkey-item]') ||
-      main
+      main.querySelector('[data-finite-scroll-hotkey-item]')
     );
   };
 
@@ -74,8 +75,17 @@
     overlay.appendChild(inner);
 
     const main = document.querySelector("main");
-    if (!main) return;
-    main.prepend(overlay);
+    const feedContainer =
+      document.querySelector('[data-testid="mainFeed"]') ||
+      document.querySelector('[data-test-id="main-feed"]') ||
+      getFeedElement();
+    const host = feedContainer?.parentElement || main;
+    if (!host) return;
+    if (feedContainer && host.contains(feedContainer)) {
+      host.insertBefore(overlay, feedContainer);
+    } else {
+      host.prepend(overlay);
+    }
   };
 
   const apply = () => {
